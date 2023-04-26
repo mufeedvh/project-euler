@@ -19,3 +19,7 @@ end
 
 println(sum_naive(1000))
 println(sum_optimal(1000))
+
+using BenchmarkTools
+@btime sum_naive(1000)
+@btime sum_optimal(1000)
